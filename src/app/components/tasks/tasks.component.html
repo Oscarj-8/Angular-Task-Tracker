@@ -1,3 +1,7 @@
 <!-- <app-tasks *ngFor="let task of tasks" [task]="task">{{ task.text }}</app-tasks> -->
 
-<app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+<app-task-item
+  *ngFor="let task of tasks"
+  [task]="task"
+  (onDeleteTask)="deleteTask(task)"
+></app-task-item>
